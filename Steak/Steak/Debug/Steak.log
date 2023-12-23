@@ -1,0 +1,4 @@
+﻿  Utils.cpp
+C:\Users\USER\source\repos\Steak\Steak\src\PE\exe\Utils.cpp(12,18): warning C4018: '>=': signed/unsigned 不相符
+C:\Users\USER\source\repos\Steak\Steak\src\PE\exe\Utils.cpp(12,72): warning C4018: '<=': signed/unsigned 不相符
+  Steak.vcxproj -> C:\Users\USER\source\repos\Steak\Debug\Steak.exe
