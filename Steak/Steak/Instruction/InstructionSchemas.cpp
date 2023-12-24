@@ -181,5 +181,21 @@ const InstructionSchema InstructionSchemas[0x100] = {
 	/*0x86*/{ Memorily::XCHG,	{ {AddressingMethod::E,	 Size::byte}, {AddressingMethod::G,		Size::byte},	{AddressingMethod::_none,	Size::_none} } },
 	/*0x87*/{ Memorily::XCHG,	{ {AddressingMethod::E,	 Size::vword},{AddressingMethod::G,		Size::vword},	{AddressingMethod::_none,	Size::_none} } },
 
+	/*0x88*/{ Memorily::MOV,	{ {AddressingMethod::E,  Size::byte}, {AddressingMethod::G,		Size::byte},	{AddressingMethod::_none,	Size::_none} } },
+	/*0x89*/{ Memorily::MOV,	{ {AddressingMethod::E,  Size::vword},{AddressingMethod::G,		Size::vword},	{AddressingMethod::_none,	Size::_none} } },
+	/*0x8A*/{ Memorily::MOV,	{ {AddressingMethod::G,  Size::byte}, {AddressingMethod::E,		Size::byte},	{AddressingMethod::_none,	Size::_none} } },
+	/*0x8B*/{ Memorily::MOV,	{ {AddressingMethod::G,  Size::vword},{AddressingMethod::E,		Size::vword},	{AddressingMethod::_none,	Size::_none} } },
+	/*0x8C*/{ Memorily::MOV,	{ {AddressingMethod::E,  Size::vword},{AddressingMethod::S,		Size::word},	{AddressingMethod::_none,	Size::_none} } },
+	/*0x8D*/{ Memorily::LEA,	{ {AddressingMethod::G,  Size::vword},{AddressingMethod::M,		Size::_none},	{AddressingMethod::_none,	Size::_none} } },
+	/*0x8E*/{ Memorily::MOV,	{ {AddressingMethod::S,  Size::word}, {AddressingMethod::E,		Size::word},	{AddressingMethod::_none,	Size::_none} } },
+	/*0x8F*/{ Memorily::POP,	{ {AddressingMethod::E,  Size::vword},{AddressingMethod::_none, Size::_none},	{AddressingMethod::_none,	Size::_none} } },
 
+	/*0x90*/{ Memorily::XCHG,	{ {GeneralRegister::A,  Size::vword},	{GeneralRegister::A,  Size::vword},		{AddressingMethod::_none, Size::_none} } },
+	/*0x91*/{ Memorily::XCHG,	{ {GeneralRegister::A,  Size::vword},	{GeneralRegister::C,  Size::vword},		{AddressingMethod::_none, Size::_none} } },
+	/*0x92*/{ Memorily::XCHG,	{ {GeneralRegister::A,  Size::vword},	{GeneralRegister::D,  Size::vword},		{AddressingMethod::_none, Size::_none} } },
+	/*0x93*/{ Memorily::XCHG,	{ {GeneralRegister::A,  Size::vword},	{GeneralRegister::B,  Size::vword},		{AddressingMethod::_none, Size::_none} } },
+	/*0x94*/{ Memorily::XCHG,	{ {GeneralRegister::A,	Size::vword},	{GeneralRegister::SP, Size::vword},		{AddressingMethod::_none, Size::_none} } },
+	/*0x95*/{ Memorily::XCHG,	{ {GeneralRegister::A,	Size::vword},	{GeneralRegister::BP, Size::vword},		{AddressingMethod::_none, Size::_none} } },
+	/*0x96*/{ Memorily::XCHG,	{ {GeneralRegister::A,	Size::vword},	{GeneralRegister::SI, Size::vword},		{AddressingMethod::_none, Size::_none} } },
+	/*0x97*/{ Memorily::XCHG,	{ {GeneralRegister::A,	Size::vword},	{GeneralRegister::DI, Size::vword},		{AddressingMethod::_none, Size::_none} } },
 };
